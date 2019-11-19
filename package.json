@@ -1,0 +1,30 @@
+{
+  "name": "newkodaktor",
+  "version": "1.8.0",
+  "description": "the next step of kodaktor: js only",
+  "main": "index.js",
+  "engines": {
+    "node": "6.0.0"
+  },
+  "scripts": {
+    "testold": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon",
+    "build": "babel --watch src/1.js --out-file bnd.js",
+    "launch": "nodemon bnd.js --watch",
+    "s": "npm-run-all --parallel launch build",
+    "test": "mocha -u tdd ./tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "mongoose",
+    "experiments"
+  ],
+  "author": "EliasGoss",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^4.11.7"
+  }
+}
