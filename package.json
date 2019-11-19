@@ -17,6 +17,6 @@
   "author": "EliasGoss",
   "license": "ISC",
   "dependencies": {
-    "mongoose": "^4.11.7"
+    "mongoose": "^5.7.11"
   }
 }
