@@ -13,7 +13,7 @@ module
 .exports = mg
 .createConnection(...options)
 .on('connected', () => console.log('Соединились!'))
-.model('User', new mg.Schema(require('./UserSchema.js')));
+.model('User', new mg.Schema(require('./UserSchema')));
 
 // мы можем экспортировать так, ибо монгуз внутренне отслеживает состояние соединения
 // встретив вызов createConnection, он попробует выполнить его 
