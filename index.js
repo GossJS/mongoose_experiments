@@ -1,4 +1,4 @@
-const User = require('./mongo2');
+const User = require('./model');
 User
 .findOne({login: 'ego@yandex.ru'})
 .then(x => console.log('Результат: ' + x.password) || process.exit(0))
