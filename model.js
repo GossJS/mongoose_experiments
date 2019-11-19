@@ -1,7 +1,7 @@
 const mg = require('mongoose'); // 4.11.7
  
 const options = [`mongodb://reader:123321@kodaktor.ru/readusers`, 
-	 { useNewUrlParser: true }, 
+	 { useNewUrlParser: true, useUnifiedTopology: true }, 
 	 e => e ? console.error('Соединиться с БД не удалось. На этом всё.') || process.exit(1) : console.log('Успех!')
 ];
 
