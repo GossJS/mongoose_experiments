@@ -1,22 +1,14 @@
 {
-  "name": "newkodaktor",
-  "version": "1.8.0",
-  "description": "the next step of kodaktor: js only",
+  "name": "mongoose_experiments",
+  "version": "0.1.0",
+  "description": "the next step of mongoose",
   "main": "index.js",
   "engines": {
-    "node": "6.0.0"
-  },
-  "scripts": {
-    "testold": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon",
-    "build": "babel --watch src/1.js --out-file bnd.js",
-    "launch": "nodemon bnd.js --watch",
-    "s": "npm-run-all --parallel launch build",
-    "test": "mocha -u tdd ./tests"
+    "node": "10.13.0"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/GossJS/mongoose_experiments.git"
   },
   "keywords": [
     "mongoose",
